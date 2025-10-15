@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | RSUD Batang Sangir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0f1f5c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo RSUD">
+        <h1>RSUD Batang Sangir</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="dokter.html">Dokter</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="pendaftaran.html" class="btn-nav">Daftar Online</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="page-hero kontak-hero">
+    <div class="hero-overlay">
+      <h2>Hubungi Kami</h2>
+      <p>Kami siap melayani Anda dengan sepenuh hati</p>
+    </div>
+  </section>
+
+  <!-- ===== KONTAK INFO ===== -->
+  <section class="container">
+    <h3>Informasi Kontak</h3>
+    <div class="kontak-info">
+      <p><i class="fas fa-map-marker-alt"></i> Jl. Lubuk Malako Nagari Lubuk Malako Kec. Sangir Jujuan, Solok Selatan, Sumatera Barat</p>
+      <p><i class="fas fa-phone"></i> (+62) 82288013505</p>
+      <p><i class="fas fa-envelope"></i> rspsolsel@gmail.com</p>
+      <p><i class="fas fa-clock"></i> Buka 24 Jam Setiap Hari</p>
+    </div>
+  </section>
+
+  <!-- ===== FORM PESAN ===== -->
+  <section class="form-section">
+    <div class="container">
+      <h3>Kirim Pesan</h3>
+      <form id="formKontak">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+        </div>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== GOOGLE MAPS ===== -->
+  <section class="container">
+    <h3>Lokasi Kami</h3>
+    <div style="width:100%; height:400px; border-radius:12px; overflow:hidden;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.9089284379506!2d101.34085107496593!3d-1.4517075985346222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2c61000634a935%3A0xd2e20456ae21b40c!2sRSUD%20BATANG%20SANGIR%20SOLOK%20SELATAN!5e1!3m2!1sen!2sid!4v1760521033591!5m2!1sen!2sid" 
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>RSUD Batang Sangir</h4>
+      <p>Memberikan pelayanan kesehatan yang profesional, ramah, dan berkualitas untuk masyarakat Solok Selatan.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Tautan Cepat</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="dokter.html">Dokter</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontak Kami</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Jl. Lubuk Malako Nagari Lubuk Malako Kec. Sangir Jujuan, Solok Selatan, Sumatera Barat</p>
+      <p><i class="fas fa-phone-alt"></i> (+62) 82288013505</p>
+      <p><i class="fas fa-envelope"></i> rspsolsel@gmail.com</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Ikuti Kami</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 RS Umum Daerah Batang Sangir. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    // Validasi Form Kontak
+    document.getElementById('formKontak').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Terima kasih, pesan Anda sudah terkirim!');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

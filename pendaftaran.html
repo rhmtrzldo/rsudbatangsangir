@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Pasien | RSUD Batang Sangir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0f1f5c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo RSUD">
+        <h1>RSUD Batang Sangir</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="dokter.html">Dokter</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="pendaftaran.html" class="active">Daftar Online</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero daftar-hero">
+    <div class="hero-overlay">
+      <h2>Pendaftaran Pasien Online</h2>
+      <p>Isi data diri dengan lengkap untuk melakukan pendaftaran di RSUD Batang Sangir</p>
+    </div>
+  </section>
+
+  <!-- ===== FORM PENDAFTARAN ===== -->
+  <section class="form-section">
+    <div class="container">
+      <h3>Formulir Pendaftaran Pasien</h3>
+      <form id="formPendaftaran" onsubmit="return validateForm()">
+        
+        <div class="form-group">
+          <label for="nama">Nama Lengkap <span>*</span></label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+        </div>
+
+        <div class="form-group">
+          <label for="nik">NIK <span>*</span></label>
+          <input type="text" id="nik" name="nik" placeholder="Masukkan Nomor Induk Kependudukan">
+        </div>
+
+        <div class="form-group">
+          <label for="tgl_lahir">Tanggal Lahir <span>*</span></label>
+          <input type="date" id="tgl_lahir" name="tgl_lahir">
+        </div>
+
+        <div class="form-group">
+          <label for="jk">Jenis Kelamin <span>*</span></label>
+          <select id="jk" name="jk">
+            <option value="">-- Pilih --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat <span>*</span></label>
+          <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="nohp">No. HP <span>*</span></label>
+          <input type="text" id="nohp" name="nohp" placeholder="Masukkan nomor telepon aktif">
+        </div>
+
+        <div class="form-group">
+          <label for="poli">Poli Tujuan <span>*</span></label>
+          <select id="poli" name="poli">
+            <option value="">-- Pilih Poli --</option>
+            <option value="Umum">Poli Umum</option>
+            <option value="Anak">Poli Anak</option>
+            <option value="Gigi">Poli Gigi</option>
+            <option value="Kandungan">Poli Kandungan</option>
+            <option value="Penyakit Dalam">Poli Penyakit Dalam</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tgl_periksa">Tanggal Periksa <span>*</span></label>
+          <input type="date" id="tgl_periksa" name="tgl_periksa">
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>RSUD Batang Sangir</h4>
+      <p>Memberikan pelayanan kesehatan yang profesional, ramah, dan berkualitas untuk masyarakat Solok Selatan.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Tautan Cepat</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="dokter.html">Dokter</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontak Kami</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Jl. Lubuk Malako Nagari Lubuk Malako Kec. Sangir Jujuan, Solok Selatan, Sumatera Barat</p>
+      <p><i class="fas fa-phone-alt"></i> (+62) 82288013505</p>
+      <p><i class="fas fa-envelope"></i> rspsolsel@gmail.com</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Ikuti Kami</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 RS Umum Daerah Batang Sangir. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- ===== JAVASCRIPT VALIDASI ===== -->
+  <script>
+    function validateForm() {
+      const nama = document.getElementById('nama').value.trim();
+      const nik = document.getElementById('nik').value.trim();
+      const jk = document.getElementById('jk').value;
+      const alamat = document.getElementById('alamat').value.trim();
+      const nohp = document.getElementById('nohp').value.trim();
+      const poli = document.getElementById('poli').value;
+      const tgl = document.getElementById('tgl_periksa').value;
+
+      if (!nama || !nik || !jk || !alamat || !nohp || !poli || !tgl) {
+        alert("Harap isi semua data yang wajib diisi!");
+        return false;
+      }
+
+      if (nik.length !== 16 || isNaN(nik)) {
+        alert("NIK harus 16 digit angka.");
+        return false;
+      }
+
+      if (isNaN(nohp) || nohp.length < 10) {
+        alert("Nomor HP tidak valid.");
+        return false;
+      }
+
+      alert("Pendaftaran berhasil dikirim! Terima kasih telah mendaftar di RSUD Batang Sangir.");
+      document.getElementById('formPendaftaran').reset();
+      return false; // mencegah reload halaman
+    }
+  </script>
+
+</body>
+</html>
